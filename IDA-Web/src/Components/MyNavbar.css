@@ -1,0 +1,198 @@
+.NavContainer{
+    width: 100%;
+    height: 60px;
+    /* background-color: #FFF5E0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+}
+
+.NavContainer{
+    background-color: #fff !important;
+}
+
+.logo span{
+    color: #41B06E;
+    font-size: 25px;
+}
+
+.logo a{
+    font-size: 25px;
+    color:var(--border--color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.logo span:hover{
+    color: var(--primary-color);
+}
+
+.logo h3{
+    font-size: 23px;
+    color: #000;
+}
+
+.list ul{
+    display: inline-flex;
+    gap: 25px;
+}
+
+.list ul li {
+   list-style-type: none;
+   
+}
+
+.list ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+
+.list ul li a:hover {
+    color: var(--primary-color);
+    /* font-size: 22px; */
+    border-bottom: 2px solid var(--primary-color);
+    transition: all 0.2s ease-in-out;
+    /* border-top: 2px solid var(--secondery-color); */
+}
+
+.login button{
+    padding: 5px 10px;
+    font-weight: 600;
+}
+
+.log-btn{
+    /* background-color:var( --main--bg-color); */
+    background-color: #FFF;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.log-btn:hover{
+    color: var(--secondery-color);
+}
+
+.sig-btn{
+    font-size: 16px;
+    background-color:var(--secondery-color) ;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.sig-btn:hover{
+    background-color: var(--border--color);
+    color: var(--primary-color);
+}
+
+/* Togglebar  */
+
+#toggle-nav{
+    display:none;
+}
+.topmenu{
+    position: relative;
+    display: inline-block;
+}
+.top-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+.top-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out ;
+}
+.menu-link{
+    position: absolute;
+    top: 11%;
+    right: 5%;
+    background-color:white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+    border-radius: 15px;
+}
+.menu-link a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+.menu-link li{
+    list-style: none;
+}
+
+.menu-link.open{
+    max-height: 350px;
+    background-color: var(--secondery-color);
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-link a:hover{
+    color: var(--primary-color);
+    background-color: var(--border--color);
+    transition: all 0.3s ease-in-out;
+}
+
+.top-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px,5px);
+}
+
+.top-icon.open span:nth-child(2){
+    opacity: 0;
+}
+
+.top-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px,-5px); 
+}
+
+.top-icon span:first-child{
+    transform: none;
+}
+
+.top-icon span:first-child{
+    opacity: 1;
+}
+.top-icon span:first-child{
+    transform: none;
+}
+
+/* Media Quiery */
+
+@media screen And (max-width: 900px) {
+    .login,.list{
+        display: none;
+    }
+    #toggle-nav{
+        display: flex;
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .nav-link {
+    animation-name: navLinkFade;
+    animation-duration: 0.1ms;
+    animation-fill-mode: forwards;
+  }

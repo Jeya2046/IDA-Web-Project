@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+* {
+  font-family: "EB Garamond", serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-color : #41B06E;
+  --secondery-color :#8DECB4;
+  --main--bg-color :#FFF5E0;
+  --border--color :#141E46;
+  --shimmering-blue: #add8e6;
+  --sparkling-purple: #c8a2c8;
+  --glossy-green: #90ee90;
+}
+
+.container{
+ padding: 10px;
+}
+
